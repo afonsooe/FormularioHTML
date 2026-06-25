@@ -4,9 +4,8 @@ Atividade da disciplina Programação Web I.
 
 Aluno: Erivelton Oliveira Afonso
 
-Estrutura da Página
 
-<h1>Formulário Completo</h1>
+> Estrutura da Página
 
 <form>
 
@@ -22,8 +21,12 @@ Estrutura da Página
 
     Botão Enviar
 
+    ________________
+    
+    Tabela de Resumo dos Campos
+    
 </form>
 
-<hr>
 
-Tabela de Resumo dos Campos
+
+
