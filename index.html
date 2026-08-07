@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Formulário Completo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1 align="center">Formulário Completo</h1>
+<h1>Formulário Completo</h1>
 
 <hr>
 
@@ -19,7 +20,6 @@
         <legend><b>Dados Pessoais</b></legend>
 
         <table>
-
             <tbody>
 
             <tr>
@@ -48,7 +48,6 @@
             </tr>
 
             </tbody>
-
         </table>
 
     </fieldset>
@@ -60,7 +59,6 @@
         <legend><b>Endereço</b></legend>
 
         <table>
-
             <tbody>
 
             <tr>
@@ -89,7 +87,6 @@
             </tr>
 
             </tbody>
-
         </table>
 
     </fieldset>
@@ -101,50 +98,37 @@
         <legend><b>Preferências</b></legend>
 
         <table>
-
             <tbody>
 
             <tr>
-
                 <td><label for="cor">Cor Favorita:</label></td>
 
                 <td>
-
                     <select id="cor" name="cor">
-
                         <option>Vermelho</option>
                         <option>Azul</option>
                         <option>Verde</option>
                         <option>Amarelo</option>
-
                     </select>
-
                 </td>
-
             </tr>
 
             <tr>
-
                 <td>Gênero:</td>
 
                 <td>
-
                     <input type="radio" id="masculino" name="genero">
                     <label for="masculino">Masculino</label>
 
                     <input type="radio" id="feminino" name="genero">
                     <label for="feminino">Feminino</label>
-
                 </td>
-
             </tr>
 
             <tr>
-
                 <td>Interesses:</td>
 
                 <td>
-
                     <input type="checkbox" id="esportes">
                     <label for="esportes">Esportes</label>
 
@@ -157,13 +141,10 @@
 
                     <input type="checkbox" id="tecnologia">
                     <label for="tecnologia">Tecnologia</label>
-
                 </td>
-
             </tr>
 
             </tbody>
-
         </table>
 
     </fieldset>
@@ -175,7 +156,6 @@
         <legend><b>Upload de Arquivo</b></legend>
 
         <label for="arquivo">Escolha um arquivo:</label>
-
         <input type="file" id="arquivo" name="arquivo">
 
     </fieldset>
@@ -187,41 +167,24 @@
         <legend><b>Informações de Login</b></legend>
 
         <table>
-
             <tbody>
 
             <tr>
-
                 <td><label for="usuario">Nome de Usuário:</label></td>
-
-                <td>
-                    <input type="text" id="usuario" name="usuario">
-                </td>
-
+                <td><input type="text" id="usuario" name="usuario"></td>
             </tr>
 
             <tr>
-
                 <td><label for="senha">Senha:</label></td>
-
-                <td>
-                    <input type="password" id="senha" name="senha">
-                </td>
-
+                <td><input type="password" id="senha" name="senha"></td>
             </tr>
 
             <tr>
-
                 <td><label for="confirmar">Confirmar Senha:</label></td>
-
-                <td>
-                    <input type="password" id="confirmar" name="confirmar">
-                </td>
-
+                <td><input type="password" id="confirmar" name="confirmar"></td>
             </tr>
 
             </tbody>
-
         </table>
 
     </fieldset>
@@ -236,18 +199,14 @@
 
 <h2>Resumo dos Campos do Formulário</h2>
 
-<table border="1">
+<table class="resumo">
 
     <thead>
-
     <tr>
-
         <th>Campo</th>
         <th>Tipo</th>
         <th>Obrigatório</th>
-
     </tr>
-
     </thead>
 
     <tbody>
@@ -351,15 +310,9 @@
     </tbody>
 
     <tfoot>
-
     <tr>
-
-        <th colspan="3">
-            Total de campos: 16
-        </th>
-
+        <th colspan="3">Total de campos: 16</th>
     </tr>
-
     </tfoot>
 
 </table>

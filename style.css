@@ -1,322 +1,127 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Formulário Completo</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<h1>Formulário Completo</h1>
-
-<hr>
-
-<form>
-
-    <fieldset>
-
-        <legend><b>Dados Pessoais</b></legend>
-
-        <table>
-            <tbody>
-
-            <tr>
-                <td><label for="nome">Nome:</label></td>
-                <td><input type="text" id="nome" name="nome"></td>
-            </tr>
-
-            <tr>
-                <td><label for="sobrenome">Sobrenome:</label></td>
-                <td><input type="text" id="sobrenome" name="sobrenome"></td>
-            </tr>
-
-            <tr>
-                <td><label for="email">Email:</label></td>
-                <td><input type="email" id="email" name="email"></td>
-            </tr>
-
-            <tr>
-                <td><label for="telefone">Telefone:</label></td>
-                <td><input type="tel" id="telefone" name="telefone"></td>
-            </tr>
-
-            <tr>
-                <td><label for="nascimento">Data de Nascimento:</label></td>
-                <td><input type="date" id="nascimento" name="nascimento"></td>
-            </tr>
-
-            </tbody>
-        </table>
-
-    </fieldset>
-
-    <br>
-
-    <fieldset>
-
-        <legend><b>Endereço</b></legend>
-
-        <table>
-            <tbody>
-
-            <tr>
-                <td><label for="rua">Rua:</label></td>
-                <td><input type="text" id="rua" name="rua"></td>
-            </tr>
-
-            <tr>
-                <td><label for="numero">Número:</label></td>
-                <td><input type="number" id="numero" name="numero"></td>
-            </tr>
-
-            <tr>
-                <td><label for="cidade">Cidade:</label></td>
-                <td><input type="text" id="cidade" name="cidade"></td>
-            </tr>
-
-            <tr>
-                <td><label for="estado">Estado:</label></td>
-                <td><input type="text" id="estado" name="estado"></td>
-            </tr>
-
-            <tr>
-                <td><label for="cep">CEP:</label></td>
-                <td><input type="text" id="cep" name="cep"></td>
-            </tr>
-
-            </tbody>
-        </table>
-
-    </fieldset>
-
-    <br>
-
-    <fieldset>
-
-        <legend><b>Preferências</b></legend>
-
-        <table>
-            <tbody>
-
-            <tr>
-                <td><label for="cor">Cor Favorita:</label></td>
-
-                <td>
-                    <select id="cor" name="cor">
-                        <option>Vermelho</option>
-                        <option>Azul</option>
-                        <option>Verde</option>
-                        <option>Amarelo</option>
-                    </select>
-                </td>
-            </tr>
-
-            <tr>
-                <td>Gênero:</td>
-
-                <td>
-                    <input type="radio" id="masculino" name="genero">
-                    <label for="masculino">Masculino</label>
-
-                    <input type="radio" id="feminino" name="genero">
-                    <label for="feminino">Feminino</label>
-                </td>
-            </tr>
-
-            <tr>
-                <td>Interesses:</td>
-
-                <td>
-                    <input type="checkbox" id="esportes">
-                    <label for="esportes">Esportes</label>
-
-                    <br>
-
-                    <input type="checkbox" id="musica">
-                    <label for="musica">Música</label>
-
-                    <br>
-
-                    <input type="checkbox" id="tecnologia">
-                    <label for="tecnologia">Tecnologia</label>
-                </td>
-            </tr>
-
-            </tbody>
-        </table>
-
-    </fieldset>
-
-    <br>
-
-    <fieldset>
-
-        <legend><b>Upload de Arquivo</b></legend>
-
-        <label for="arquivo">Escolha um arquivo:</label>
-        <input type="file" id="arquivo" name="arquivo">
-
-    </fieldset>
-
-    <br>
-
-    <fieldset>
-
-        <legend><b>Informações de Login</b></legend>
-
-        <table>
-            <tbody>
-
-            <tr>
-                <td><label for="usuario">Nome de Usuário:</label></td>
-                <td><input type="text" id="usuario" name="usuario"></td>
-            </tr>
-
-            <tr>
-                <td><label for="senha">Senha:</label></td>
-                <td><input type="password" id="senha" name="senha"></td>
-            </tr>
-
-            <tr>
-                <td><label for="confirmar">Confirmar Senha:</label></td>
-                <td><input type="password" id="confirmar" name="confirmar"></td>
-            </tr>
-
-            </tbody>
-        </table>
-
-    </fieldset>
-
-    <br>
-
-    <input type="submit" value="Enviar">
-
-</form>
-
-<hr>
-
-<h2>Resumo dos Campos do Formulário</h2>
-
-<table class="resumo">
-
-    <thead>
-    <tr>
-        <th>Campo</th>
-        <th>Tipo</th>
-        <th>Obrigatório</th>
-    </tr>
-    </thead>
-
-    <tbody>
-
-    <tr>
-        <td>Nome</td>
-        <td>Texto</td>
-        <td>Sim</td>
-    </tr>
-
-    <tr>
-        <td>Sobrenome</td>
-        <td>Texto</td>
-        <td>Sim</td>
-    </tr>
-
-    <tr>
-        <td>Email</td>
-        <td>Email</td>
-        <td>Sim</td>
-    </tr>
-
-    <tr>
-        <td>Telefone</td>
-        <td>Telefone</td>
-        <td>Não</td>
-    </tr>
-
-    <tr>
-        <td>Data de Nascimento</td>
-        <td>Data</td>
-        <td>Sim</td>
-    </tr>
-
-    <tr>
-        <td>Rua</td>
-        <td>Texto</td>
-        <td>Sim</td>
-    </tr>
-
-    <tr>
-        <td>Número</td>
-        <td>Número</td>
-        <td>Sim</td>
-    </tr>
-
-    <tr>
-        <td>Cidade</td>
-        <td>Texto</td>
-        <td>Sim</td>
-    </tr>
-
-    <tr>
-        <td>Estado</td>
-        <td>Texto</td>
-        <td>Sim</td>
-    </tr>
-
-    <tr>
-        <td>CEP</td>
-        <td>Texto</td>
-        <td>Sim</td>
-    </tr>
-
-    <tr>
-        <td>Cor Favorita</td>
-        <td>Lista</td>
-        <td>Não</td>
-    </tr>
-
-    <tr>
-        <td>Gênero</td>
-        <td>Radio</td>
-        <td>Sim</td>
-    </tr>
-
-    <tr>
-        <td>Interesses</td>
-        <td>Checkbox</td>
-        <td>Não</td>
-    </tr>
-
-    <tr>
-        <td>Arquivo</td>
-        <td>Upload</td>
-        <td>Não</td>
-    </tr>
-
-    <tr>
-        <td>Usuário</td>
-        <td>Texto</td>
-        <td>Sim</td>
-    </tr>
-
-    <tr>
-        <td>Senha</td>
-        <td>Password</td>
-        <td>Sim</td>
-    </tr>
-
-    </tbody>
-
-    <tfoot>
-    <tr>
-        <th colspan="3">Total de campos: 16</th>
-    </tr>
-    </tfoot>
-
-</table>
-
-</body>
-
-</html>
+body {
+    background-color: #f4f7fa;
+    color: #1f2933;
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+h1 {
+    color: #123c69;
+    text-align: center;
+}
+
+h2 {
+    color: #123c69;
+}
+
+hr {
+    border: 1px solid #d1d9e0;
+    margin-bottom: 25px;
+}
+
+form {
+    max-width: 750px;
+    margin: auto;
+}
+
+fieldset {
+    background-color: #ffffff;
+    border: 2px solid #2e86c1;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+legend {
+    background-color: #dbeeff;
+    color: #123c69;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+form table {
+    width: 100%;
+}
+
+form td {
+    padding: 6px;
+}
+
+form td:first-child {
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="password"],
+select {
+    background-color: #f8fafc;
+    color: #1f2933;
+    border: 1px solid #b8c5d1;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 14px;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+input[type="number"]:hover,
+input[type="date"]:hover,
+input[type="password"]:hover,
+select:hover {
+    background-color: #eef6fc;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="password"]:focus,
+select:focus {
+    outline: none;
+    border-color: #2e86c1;
+    box-shadow: 0 0 0 3px rgba(46, 134, 193, 0.25);
+}
+
+input[type="submit"] {
+    background-color: #123c69;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+input[type="submit"]:hover {
+    background-color: #2e86c1;
+}
+
+.resumo {
+    width: 750px;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+.resumo th,
+.resumo td {
+    border: 1px solid #b8c5d1;
+    padding: 10px;
+}
+
+.resumo thead {
+    background-color: #123c69;
+    color: #ffffff;
+}
+
+.resumo tfoot {
+    background-color: #dbeeff;
+    color: #123c69;
+}
