@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -17,179 +18,112 @@
 
     <fieldset>
 
-        <legend><b>Dados Pessoais</b></legend>
+        <legend>Dados Pessoais</legend>
 
-        <table>
-            <tbody>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
 
-            <tr>
-                <td><label for="nome">Nome:</label></td>
-                <td><input type="text" id="nome" name="nome"></td>
-            </tr>
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome">
 
-            <tr>
-                <td><label for="sobrenome">Sobrenome:</label></td>
-                <td><input type="text" id="sobrenome" name="sobrenome"></td>
-            </tr>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
 
-            <tr>
-                <td><label for="email">Email:</label></td>
-                <td><input type="email" id="email" name="email"></td>
-            </tr>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone">
 
-            <tr>
-                <td><label for="telefone">Telefone:</label></td>
-                <td><input type="tel" id="telefone" name="telefone"></td>
-            </tr>
-
-            <tr>
-                <td><label for="nascimento">Data de Nascimento:</label></td>
-                <td><input type="date" id="nascimento" name="nascimento"></td>
-            </tr>
-
-            </tbody>
-        </table>
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento">
 
     </fieldset>
 
-    <br>
-
     <fieldset>
 
-        <legend><b>Endereço</b></legend>
+        <legend>Endereço</legend>
 
-        <table>
-            <tbody>
+        <label for="rua">Rua:</label>
+        <input type="text" id="rua" name="rua">
 
-            <tr>
-                <td><label for="rua">Rua:</label></td>
-                <td><input type="text" id="rua" name="rua"></td>
-            </tr>
+        <label for="numero">Número:</label>
+        <input type="number" id="numero" name="numero">
 
-            <tr>
-                <td><label for="numero">Número:</label></td>
-                <td><input type="number" id="numero" name="numero"></td>
-            </tr>
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade">
 
-            <tr>
-                <td><label for="cidade">Cidade:</label></td>
-                <td><input type="text" id="cidade" name="cidade"></td>
-            </tr>
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado">
 
-            <tr>
-                <td><label for="estado">Estado:</label></td>
-                <td><input type="text" id="estado" name="estado"></td>
-            </tr>
-
-            <tr>
-                <td><label for="cep">CEP:</label></td>
-                <td><input type="text" id="cep" name="cep"></td>
-            </tr>
-
-            </tbody>
-        </table>
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep">
 
     </fieldset>
 
-    <br>
-
     <fieldset>
 
-        <legend><b>Preferências</b></legend>
+        <legend>Preferências</legend>
 
-        <table>
-            <tbody>
+        <label for="cor">Cor Favorita:</label>
+        <select id="cor" name="cor">
+            <option>Vermelho</option>
+            <option>Azul</option>
+            <option>Verde</option>
+            <option>Amarelo</option>
+        </select>
 
-            <tr>
-                <td><label for="cor">Cor Favorita:</label></td>
+        <span class="rotulo-grupo">Gênero:</span>
 
-                <td>
-                    <select id="cor" name="cor">
-                        <option>Vermelho</option>
-                        <option>Azul</option>
-                        <option>Verde</option>
-                        <option>Amarelo</option>
-                    </select>
-                </td>
-            </tr>
+        <span class="opcao">
+            <input type="radio" id="masculino" name="genero">
+            <label for="masculino">Masculino</label>
+        </span>
 
-            <tr>
-                <td>Gênero:</td>
+        <span class="opcao">
+            <input type="radio" id="feminino" name="genero">
+            <label for="feminino">Feminino</label>
+        </span>
 
-                <td>
-                    <input type="radio" id="masculino" name="genero">
-                    <label for="masculino">Masculino</label>
+        <span class="rotulo-grupo">Interesses:</span>
 
-                    <input type="radio" id="feminino" name="genero">
-                    <label for="feminino">Feminino</label>
-                </td>
-            </tr>
+        <span class="opcao">
+            <input type="checkbox" id="esportes">
+            <label for="esportes">Esportes</label>
+        </span>
 
-            <tr>
-                <td>Interesses:</td>
+        <span class="opcao">
+            <input type="checkbox" id="musica">
+            <label for="musica">Música</label>
+        </span>
 
-                <td>
-                    <input type="checkbox" id="esportes">
-                    <label for="esportes">Esportes</label>
-
-                    <br>
-
-                    <input type="checkbox" id="musica">
-                    <label for="musica">Música</label>
-
-                    <br>
-
-                    <input type="checkbox" id="tecnologia">
-                    <label for="tecnologia">Tecnologia</label>
-                </td>
-            </tr>
-
-            </tbody>
-        </table>
+        <span class="opcao">
+            <input type="checkbox" id="tecnologia">
+            <label for="tecnologia">Tecnologia</label>
+        </span>
 
     </fieldset>
 
-    <br>
-
     <fieldset>
 
-        <legend><b>Upload de Arquivo</b></legend>
+        <legend>Upload de Arquivo</legend>
 
         <label for="arquivo">Escolha um arquivo:</label>
         <input type="file" id="arquivo" name="arquivo">
 
     </fieldset>
 
-    <br>
-
     <fieldset>
 
-        <legend><b>Informações de Login</b></legend>
+        <legend>Informações de Login</legend>
 
-        <table>
-            <tbody>
+        <label for="usuario">Nome de Usuário:</label>
+        <input type="text" id="usuario" name="usuario">
 
-            <tr>
-                <td><label for="usuario">Nome de Usuário:</label></td>
-                <td><input type="text" id="usuario" name="usuario"></td>
-            </tr>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha">
 
-            <tr>
-                <td><label for="senha">Senha:</label></td>
-                <td><input type="password" id="senha" name="senha"></td>
-            </tr>
-
-            <tr>
-                <td><label for="confirmar">Confirmar Senha:</label></td>
-                <td><input type="password" id="confirmar" name="confirmar"></td>
-            </tr>
-
-            </tbody>
-        </table>
+        <label for="confirmar">Confirmar Senha:</label>
+        <input type="password" id="confirmar" name="confirmar">
 
     </fieldset>
-
-    <br>
 
     <input type="submit" value="Enviar">
 

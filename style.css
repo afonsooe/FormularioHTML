@@ -29,6 +29,7 @@ fieldset {
     border: 2px solid #2e86c1;
     border-radius: 10px;
     padding: 16px;
+    margin-bottom: 20px;
 }
 
 legend {
@@ -38,17 +39,12 @@ legend {
     border-radius: 20px;
     text-transform: uppercase;
     font-size: 12px;
+    font-weight: 700;
 }
 
-form table {
-    width: 100%;
-}
-
-form td {
-    padding: 6px;
-}
-
-form td:first-child {
+label {
+    display: block;
+    margin-bottom: 6px;
     font-weight: 700;
 }
 
@@ -59,12 +55,16 @@ input[type="number"],
 input[type="date"],
 input[type="password"],
 select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
     background-color: #f8fafc;
     color: #1f2933;
     border: 1px solid #b8c5d1;
     border-radius: 6px;
     padding: 10px 14px;
     font-size: 14px;
+    margin-bottom: 16px;
 }
 
 input[type="text"]:hover,
@@ -87,6 +87,25 @@ select:focus {
     outline: none;
     border-color: #2e86c1;
     box-shadow: 0 0 0 3px rgba(46, 134, 193, 0.25);
+}
+
+.rotulo-grupo {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.opcao {
+    display: inline-block;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.opcao label {
+    display: inline;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-left: 4px;
 }
 
 input[type="submit"] {
@@ -119,6 +138,19 @@ input[type="submit"]:hover {
 .resumo thead {
     background-color: #123c69;
     color: #ffffff;
+}
+
+.resumo thead th {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.resumo tbody tr:nth-child(even) {
+    background-color: #eef6fc;
+}
+
+.resumo tbody tr:hover {
+    background-color: #dbeeff;
 }
 
 .resumo tfoot {
